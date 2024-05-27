@@ -18,6 +18,9 @@
 # Project Overview
 The objective of this analysis is to evaluate and optimise real estate asset management strategies based on key metrics such as occupancy rates, square footage, and property values. By examining these metrics across different properties, asset managers can identify trends, areas for improvement, and opportunities to enhance occupancy levels and property values, ultimately maximising returns on investment and portfolio performance.
 # Analysis
+## Univariate Analysis
+
+
 ## Occupancy Analysis
 Here we will evaluate the following:
 
