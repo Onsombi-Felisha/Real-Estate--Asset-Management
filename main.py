@@ -15,7 +15,12 @@ with open('RandomForestClassifier_pickle', 'rb') as file:
 
 app = FastAPI()
 
+# Define the data model for incoming requests
+class Item(BaseModel):
+    features: list
 
+# Expose the prediction functionality, make a prediction from the passed data and
+# return the predicted
 
 @app.post("/predict/logistic")
 def predict_logistic(item: Item):
