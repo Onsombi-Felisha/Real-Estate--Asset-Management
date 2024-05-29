@@ -18,10 +18,7 @@
 # Project Overview
 The objective of this analysis is to evaluate and optimise real estate asset management strategies based on key metrics such as occupancy rates, square footage, and property values. By examining these metrics across different properties, asset managers can identify trends, areas for improvement, and opportunities to enhance occupancy levels and property values, ultimately maximising returns on investment and portfolio performance.
 # Analysis
-## Univariate Analysis
-### Categorical Columns
-![Example Image](https://github.com/Onsombi-Felisha/Real-Estate--Asset-Management/blob/main/Images/Distribution%20of%20Categorical%20Columns.png)
-![Example Image](https://github.com/Onsombi-Felisha/Real-Estate--Asset-Management/blob/main/Images/Number%20of%20Properties%20by%20Property%20Type.png)
+
 ## Occupancy Analysis
 Here we will evaluate the following:
 
@@ -51,7 +48,7 @@ Under this section we will evaluate the following:
 
 # Machine Learning Model
 
-Three models were used and evaulted them with using accuracy score.
+Three models were used and evaulted them with using accuracy score, classification report.
 
 Model Listing :
 
