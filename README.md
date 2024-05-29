@@ -1,8 +1,9 @@
 # Prediction of Occupancy Levels and optimising real estate asset management strategies based on key metrics #
 # Code & Resources Used #
 1. Python Version: 3.13
-2. Packages: Pandas, Scikit-learn, Numpy, Matplotlib, seaborn, pandas
-3. Deployment :FastApi
+2. Jupyter Notebook [here] (https://github.com/Onsombi-Felisha/Real-Estate--Asset-Management/blob/main/Real_Estate_Assets_Management.ipynb).
+3. Packages: Pandas, Scikit-learn, Numpy, Matplotlib, seaborn, pandas
+4. Deployment :FastApi
 
 # Table of Contents
 [Project Overview](#project-overview)
