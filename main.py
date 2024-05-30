@@ -3,18 +3,10 @@ from pydantic import BaseModel
 import pickle
 import numpy as np
 
-app = FastAPI
-@app.get("/")
-async def read_root():
-    message = "Welcome to Prediction of Occupancy Levels and optimising real estate asset management strategies based on key metrics.\n" \
-              "Make a POST request to /predict with the following data in the request body: 'Asset Manager', 'Prop ID', 'Property Name', 'Property Type', 'Average Occupancy%', 'GLA SqFT'.'Gross Value','Occupied SqFt','Vacant SqFt'.\n" \
-              "For API documentation, visit: http://localhost:8000/docs"
-
-    return {message}
 
 # Load the trained models
-with open('logisticregression_model.pkl', 'rb') as file:
-    logistic_model = pickle.load(file)
+#with open('logisticregression_model.pkl', 'rb') as file:
+    #logistic_model = pickle.load(file)
 
 with open('DecisionTreeClassifier_pickle', 'rb') as file:
     decision_tree_model = pickle.load(file)
