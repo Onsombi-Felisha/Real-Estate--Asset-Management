@@ -18,9 +18,9 @@ class Item(BaseModel):
 # Function to translate prediction value to human-readable format
 def translate_prediction(prediction: int) -> str:
     if prediction == 1:
-        return "hundred average occupancy ratio"
+        return "Has hundred percent average occupancy ratio"
     else:
-        return "unknown"  # Add more cases as needed
+        return "Has zero occupancy rate"
 
 # Expose the prediction functionality, make a prediction from the passed data and return the predicted
 @app.post("/predict/logistic")
