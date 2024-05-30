@@ -89,6 +89,6 @@ Run the application using:
 uvicorn main:app --reload
 ```
 
-4. Accessing the API: Once the API server is running, users can access it using a web browser or tools like Postman. By default, the API will be accessible at http://localhost:8000.
+4. Accessing the API: Once the API server is running, users can access it using a web browser or tools like Postman. By default, the API will be accessible at http://localhost:8000/docs#/default/predict_logistic_predict_logistic_post.
 
 5. Making Predictions: Users can make predictions by sending HTTP requests to the API endpoints defined in the FastAPI application.

@@ -3,6 +3,8 @@ import pickle
 import numpy as np
 from pydantic import BaseModel
 from typing import List
+from fastapi.responses import PlainTextResponse
+
 
 # Load the trained models
 with open('logisticregression_model.pkl', 'rb') as file:
@@ -10,6 +12,13 @@ with open('logisticregression_model.pkl', 'rb') as file:
 
 app = FastAPI()
 
+@app.get("/")
+async def read_root():
+    message = "Welcome to Prediction of Occupancy Levels and optimising real estate asset management strategies based on key metrics.\n" \
+              "Make a POST request to /predict with the following data in the request body: 'Asset Manager', 'Property Type', 'GLA SqFT'.'Gross Value','Occupied SqFt','Vacant SqFt'.\n" \
+              "For API documentation, visit: http://localhost:8000/docs"
+
+    return PlainTextResponse(content=message, status_code=200)
 
 # Define the data model for incoming requests
 class Item(BaseModel):
